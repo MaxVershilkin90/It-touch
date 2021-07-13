@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru-en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="./css/common.css" media="all">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="preload" as="style" onload="this.rel='stylesheet'" href="./css/pages/main.css" media="all">
+    <link rel="stylesheet" href="./css/pages/main.css">
+  </head>
+  <body>
+
+    <include src="./src/sass/components/header/header.html"></include>
+
+    <main class="main">
+
+      <section class="slider">
+
+        <ul class="slider__nav">
+
+          <li class="slider__nav-item">
+            <button class="slider__nav-button slider__nav-button--previous" type="button" name="previous">
+              Следующий слайд
+            </button>
+          </li>
+
+          <li class="slider__nav-item">
+            <button class="slider__nav-button slider__nav-button--next" type="button" name="next">
+              Предыдущий слайд
+            </button>
+          </li>
+
+        </ul>
+
+        <div class="slider__wrap">
+
+          <div class="slider__slides">
+
+            <div class="slider__slider slider__slider--active">
+
+              <div class="slider__description">
+
+                <ul class="slider__tags">
+
+                  <li class="slider__tag">
+
+                    <a href="#">
+                      Тег
+                    </a>
+
+                  </li>
+
+                  <li class="slider__tag">
+
+                    <a href="#">
+                      Тег
+                    </a>
+
+                  </li>
+
+                  <li class="slider__tag">
+
+                    <a href="#">
+                      Тег
+                    </a>
+
+                  </li>
+
+                </ul>
+
+                <h1 class="slider__title">
+                  Первый слайд
+                </h1>
+
+                <p class="slider__subtitle">
+                  Тестовый подзаголовок слайда
+                </p>
+
+                <p class="slider__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+              </div>
+
+              <div class="slider__image">
+                <picture>
+                  <img class="slider__image" src="/" alt="Изображение первого слайда">
+                </picture>
+              </div>
+
+            </div>
+
+            <div class="slider__slider">
+
+              <div class="slider__description">
+
+                <ul class="slider__tags">
+
+                  <li class="slider__tag">
+
+                    <a href="#">
+                      Тег
+                    </a>
+
+                  </li>
+
+                  <li class="slider__tag">
+
+                    <a href="#">
+                      Тег
+                    </a>
+
+                  </li>
+
+                  <li class="slider__tag">
+
+                    <a href="#">
+                      Тег
+                    </a>
+
+                  </li>
+
+                </ul>
+
+                <h1 class="slider__title">
+                  Второй слайд
+                </h1>
+
+                <p class="slider__subtitle">
+                  Тестовый подзаголовок слайда
+                </p>
+
+                <p class="slider__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+              </div>
+
+              <div class="slider__image">
+                <picture>
+                  <img class="slider__image" src="/" alt="Изображение второго слайда">
+                </picture>
+              </div>
+
+            </div>
+
+            <div class="slider__slider">
+
+              <div class="slider__description">
+
+                <ul class="slider__tags">
+
+                  <li class="slider__tag">
+
+                    <a href="#">
+                      Тег
+                    </a>
+
+                  </li>
+
+                  <li class="slider__tag">
+
+                    <a href="#">
+                      Тег
+                    </a>
+
+                  </li>
+
+                  <li class="slider__tag">
+
+                    <a href="#">
+                      Тег
+                    </a>
+
+                  </li>
+
+                </ul>
+
+                <h1 class="slider__title">
+                  Третий слайд
+                </h1>
+
+                <p class="slider__subtitle">
+                  Тестовый подзаголовок слайда
+                </p>
+
+                <p class="slider__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+              </div>
+
+              <div class="slider__image">
+                <picture>
+                  <img class="slider__image" src="/" alt="Изображение первого слайда">
+                </picture>
+              </div>
+
+            </div>
+
+          </div>
+
+          <ul class="slider__checker">
+
+            <li class="slider__checker-item">
+              <button class="slider__checker-button" type="button" name="slide">
+                Первый слайд
+              </button>
+            </li>
+
+            <li class="slider__checker-item">
+              <button class="slider__checker-button" type="button" name="slide">
+                Второй слайд
+              </button>
+            </li>
+
+            <li class="slider__checker-item">
+              <button class="slider__checker-button" type="button" name="slide">
+                Третий слайд
+              </button>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+
+  </body>
+</html>
