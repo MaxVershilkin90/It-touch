@@ -1,6 +1,181 @@
 @import "../common.scss";
 
-// .slider {
-//   // Typography
-//   color: red;
-// }
+.slider {
+    // Block model
+    height: 700px;
+    // Typography
+    color: var(--color-light);
+    // Stylization
+    overflow: hidden;
+    background: url("/imgs/img-slider-bg.png") center no-repeat;
+    background-color: var(--color-dark);
+
+  &__slides {
+    // Position
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    // Block model
+    width: 300%;
+    height: 100%;
+  }
+
+  &__slide {
+    // Position
+    position: relative;
+    // Block model
+    width: 100%;
+  }
+
+  &__wrap {
+    // Position
+    display: flex;
+    // Block model
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  &__description {
+    // Block model
+    width: auto;
+    padding: 4rem 0 0 0;
+    box-sizing: border-box;
+  }
+
+  &__tags {
+    // Position
+    display: flex;
+    flex-flow: row;
+    // Block model
+    margin: 0 0 4em 0;
+    // Typography
+    color: var(--color-accent);
+    font-family: var(--font-optional), "Helvetica", sans-serif;
+    font-size: 0.875rem;
+
+    &-tag {
+      // Block model
+      margin: 0 1em 0 0;
+    }
+
+    &-link {
+      // Position
+      position: relative;
+      // Typography
+      color: var(--color-light);
+      font-size: inherit;
+
+      &::after {
+        // Position
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1em;
+        // Block model
+        width: 0%;
+        height: 1px;
+        // Stylization
+        background-color: var(--color-accent);
+        // Animation
+        transition: width .4s ease-in;
+      }
+
+      &:hover::after, &:focus::after {
+        // Block model
+        width: 100%;
+      }
+
+    }
+
+  }
+
+  &__title {
+    // Block model
+    margin: 0 0 .25em 0;
+    // Typography
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    // Typography
+    color: var(--color-accent);
+    font-family: var(--font-optional), "Helvetica", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    // Block model
+    margin: 0 0 1em 0;
+  }
+
+  &__text {
+    // Block model
+    width: 50%;
+    margin: 0 0 2em 0;
+  }
+
+  &__buttons {
+    // Position
+    display: flex;
+    align-items: flex-start;
+
+    &-item {
+      // Block model
+      margin: 0 1rem 0 0;
+    }
+  }
+
+  &__graphics {
+    // Position
+    position: absolute;
+    right: 0;
+    top: 35%;
+  }
+
+  &__image {
+    width: 50%;
+  }
+
+  &__nav {
+    // Positon
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+
+  }
+
+  &__checker {
+    // Positon
+    position: absolute;
+    bottom: 2rem;
+    left: 4rem;
+    display: flex;
+    // Typography
+    font-size: 0;
+
+    &-item {
+      // Block model
+      width: 2rem;
+      height: 2px;
+      margin: 0 1rem 0 0;
+      // Stylization
+      background-color: var(--color-light);
+
+      &--active {
+        // Block model
+        width: 4rem;
+        // Stylization
+        background-color: var(--color-accent);
+      }
+
+    }
+
+    &-button {
+      // Block model
+      width: 100%;
+      height: 100%;
+      // Typography
+      font-size: 0;
+    }
+  }
+
+}

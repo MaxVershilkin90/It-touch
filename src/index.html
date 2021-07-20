@@ -16,52 +16,36 @@
 
       <section class="slider">
 
-        <ul class="slider__nav">
+        <div class="slider__slides">
 
-          <li class="slider__nav-item">
-            <button class="slider__nav-button slider__nav-button--previous" type="button" name="previous">
-              Следующий слайд
-            </button>
-          </li>
+          <div class="slider__slide slider__slide--active">
 
-          <li class="slider__nav-item">
-            <button class="slider__nav-button slider__nav-button--next" type="button" name="next">
-              Предыдущий слайд
-            </button>
-          </li>
-
-        </ul>
-
-        <div class="slider__wrap">
-
-          <div class="slider__slides">
-
-            <div class="slider__slider slider__slider--active">
+            <div class="slider__wrap container">
 
               <div class="slider__description">
 
                 <ul class="slider__tags">
 
-                  <li class="slider__tag">
+                  <li class="slider__tags-tag">
 
-                    <a href="#">
-                      Тег
+                    <a class="slider__tags-link" href="#">
+                      Разработка
                     </a>
 
                   </li>
 
-                  <li class="slider__tag">
+                  <li class="slider__tags-tag">
 
-                    <a href="#">
-                      Тег
+                    <a class="slider__tags-link" href="#">
+                      Маркетинг
                     </a>
 
                   </li>
 
-                  <li class="slider__tag">
+                  <li class="slider__tags-tag">
 
-                    <a href="#">
-                      Тег
+                    <a class="slider__tags-link" href="#">
+                      Дизайн
                     </a>
 
                   </li>
@@ -69,52 +53,76 @@
                 </ul>
 
                 <h1 class="slider__title">
-                  Первый слайд
+                  Разработка сайтов
                 </h1>
 
                 <p class="slider__subtitle">
-                  Тестовый подзаголовок слайда
+                  На платформе 1С Битрикс
                 </p>
 
-                <p class="slider__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p class="slider__text paragraph paragraph--increased">
+                  Компетентное решение для компаний, выбирающих надёжность, безопасность и стабильность бизнеса. 1С Битрикс - это выбор профессионалов.
                 </p>
+
+                <ul class="slider__buttons">
+
+                  <li class="slider__buttons-item">
+
+                    <a class="slider__buttons-more link" href="#">
+                      Подробнее
+                    </a>
+
+                  </li>
+
+                  <li class="slider__buttons-item">
+
+                    <button class="slider__buttons-callback button" type="button" name="callback">
+                      Задать вопрос
+                    </button>
+
+                  </li>
+
+                </ul>
 
               </div>
 
-              <div class="slider__image">
-                <picture>
-                  <img class="slider__image" src="/" alt="Изображение первого слайда">
+              <div class="slider__graphics">
+                <picture class="slider__picture">
+                  <img class="slider__image" src="/imgs/img-slider-drone.png" alt="Изображение первого слайда">
                 </picture>
               </div>
 
             </div>
 
-            <div class="slider__slider">
+          </div>
+
+          <div class="slider__slide">
+
+            <div class="slider__wrap">
 
               <div class="slider__description">
 
                 <ul class="slider__tags">
 
-                  <li class="slider__tag">
+                  <li class="slider__tags-tag">
 
-                    <a href="#">
+                    <a class="slider__tags-link" href="#">
                       Тег
                     </a>
 
                   </li>
 
-                  <li class="slider__tag">
+                  <li class="slider__tags-tag">
 
-                    <a href="#">
+                    <a class="slider__tags-link" href="#">
                       Тег
                     </a>
 
                   </li>
 
-                  <li class="slider__tag">
+                  <li class="slider__tags-tag">
 
-                    <a href="#">
+                    <a class="slider__tags-link" href="#">
                       Тег
                     </a>
 
@@ -136,39 +144,43 @@
 
               </div>
 
-              <div class="slider__image">
-                <picture>
-                  <img class="slider__image" src="/" alt="Изображение второго слайда">
-                </picture>
-              </div>
+              <div class="slider__graphics">
+              <picture>
+                <img class="slider__image" src="/" alt="Изображение второго слайда">
+              </picture>
+            </div>
 
             </div>
 
-            <div class="slider__slider">
+          </div>
+
+          <div class="slider__slide">
+
+            <div class="slider__wrap">
 
               <div class="slider__description">
 
                 <ul class="slider__tags">
 
-                  <li class="slider__tag">
+                  <li class="slider__tags-tag">
 
-                    <a href="#">
+                    <a class="slider__tags-link" href="#">
                       Тег
                     </a>
 
                   </li>
 
-                  <li class="slider__tag">
+                  <li class="slider__tags-tag">
 
-                    <a href="#">
+                    <a class="slider__tags-link" href="#">
                       Тег
                     </a>
 
                   </li>
 
-                  <li class="slider__tag">
+                  <li class="slider__tags-tag">
 
-                    <a href="#">
+                    <a class="slider__tags-link" href="#">
                       Тег
                     </a>
 
@@ -190,19 +202,35 @@
 
               </div>
 
-              <div class="slider__image">
-                <picture>
-                  <img class="slider__image" src="/" alt="Изображение первого слайда">
-                </picture>
-              </div>
+              <div class="slider__graphics">
+              <picture>
+                <img class="slider__image" src="/" alt="Изображение первого слайда">
+              </picture>
+            </div>
 
             </div>
 
           </div>
 
+          <ul class="slider__nav">
+
+            <li class="slider__nav-item">
+              <button class="slider__nav-button slider__nav-button--previous" type="button" name="previous">
+                Следующий слайд
+              </button>
+            </li>
+
+            <li class="slider__nav-item">
+              <button class="slider__nav-button slider__nav-button--next" type="button" name="next">
+                Предыдущий слайд
+              </button>
+            </li>
+
+          </ul>
+
           <ul class="slider__checker">
 
-            <li class="slider__checker-item">
+            <li class="slider__checker-item slider__checker-item--active">
               <button class="slider__checker-button" type="button" name="slide">
                 Первый слайд
               </button>

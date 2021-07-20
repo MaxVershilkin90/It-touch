@@ -1,0 +1,67 @@
+// Buttons styles.
+
+.link {
+  // Position
+  display: block;
+  // Typography
+  font-family: var(--font-optional), "Helvetica", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 1em 3em;
+  // Stylization
+  clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 5% 100%,0% 85%,0% 0%);
+  border-spacing: -10px;
+  background: linear-gradient(-45deg, rgba(256,256,256,0.15) 0%, rgba(256,256,256,0) 50%, rgba(256,256,256,0.1) 100%);
+  // Animation
+  transition: color .4s ease-in,
+              border .4s ease-in,
+              background-color .4s ease-in,
+              transform .4s ease-in;
+
+  &--accent {
+    // Typography
+    color: var(--color-dark);
+    // Stylization
+    border: solid 1px var(--color-accent);
+    background-color: var(--color-accent);
+  }
+
+  &:hover, &:focus {
+    // Stylization
+    outline: none;
+  }
+
+}
+
+.button {
+  // Typography
+  font-family: var(--font-optional), "Helvetica", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  // Block model
+  padding: 1em 3em;
+  // Stylization
+  clip-path: polygon(90% 0%, 100% 30%, 100% 100%, 5% 100%,0% 85%,0% 0%);
+  // border: solid 1px var(--color-light);
+  background: linear-gradient(-45deg, rgba(256,256,256,0.15) 0%, rgba(256,256,256,0) 50%, rgba(256,256,256,0.1) 100%);
+  // Animation
+  transition: color .4s ease-in,
+              border .4s ease-in,
+              background-color .4s ease-in;
+
+  &--accent {
+    // Typography
+    color: var(--color-dark);
+    // Stylization
+    background-color: var(--color-accent);
+  }
+
+  &:hover, &:focus {
+    // Stylization
+    cursor: pointer;
+    outline: none;
+    color: var(--color-dark);
+    background-color: var(--color-accent);
+  }
+
+}

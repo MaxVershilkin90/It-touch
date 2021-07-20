@@ -1,0 +1,17 @@
+// Animation styles.
+@keyframes showUp {
+  from {
+    // Stylization
+    opacity: 0;
+  } to {
+    // Stylization
+    opacity: 1;
+  }
+}
+
+.anim-showUp {
+  // Transition
+  transition: opacity .4s ease-in;
+  // Animation
+  animation: showUp .4s ease-in;
+}
