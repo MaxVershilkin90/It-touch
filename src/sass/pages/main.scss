@@ -1,6 +1,8 @@
 @import "../common.scss";
 
 .slider {
+      // Position
+    position: relative;
     // Block model
     height: 700px;
     // Typography
@@ -12,19 +14,27 @@
 
   &__slides {
     // Position
-    position: relative;
     display: flex;
     flex-flow: row nowrap;
     // Block model
-    width: 300%;
+    width: 100%;
     height: 100%;
+    // Stylization
+    overflow: hidden;
   }
 
   &__slide {
     // Position
     position: relative;
+    display: flex;
     // Block model
     width: 100%;
+
+    &--active {
+      // Position
+      display: flex;
+    }
+
   }
 
   &__wrap {
@@ -136,10 +146,40 @@
   }
 
   &__nav {
-    // Positon
-    position: absolute;
-    bottom: 2rem;
-    right: 4rem;
+
+    &-button {
+
+      &--previous {
+        // Position
+        position: absolute;
+        left: 2rem;
+        top: 50%;
+        // Block model
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1rem;
+        // Typography
+        font-size: 0;
+        // Stylization
+        background-color: var(--color-accent);
+      }
+
+      &--next {
+      // Position
+      position: absolute;
+      right: 2rem;
+      top: 50%;
+      // Block model
+      width: 2rem;
+      height: 2rem;
+      border-radius: 1rem;
+      // Typography
+      font-size: 0;
+      // Stylization
+      background-color: var(--color-accent);
+    }
+
+    }
 
   }
 
